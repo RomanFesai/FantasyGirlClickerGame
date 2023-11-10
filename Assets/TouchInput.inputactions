@@ -1,0 +1,34 @@
+{
+    "name": "Touch",
+    "maps": [
+        {
+            "name": "touchInput1",
+            "id": "78dca148-0361-4b34-b755-ecb54e2174a5",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "80b40f00-7828-42b1-850a-c932a9a41e4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fb667ff4-e1a0-47ec-8f8c-f4923c546eb8",
+                    "path": "<Touchscreen>/delta/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
