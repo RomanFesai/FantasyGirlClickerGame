@@ -22,6 +22,8 @@ namespace Assets.Scripts.DungeonCrawlerScripts
         public Slider HealthBar;
         public Slider StaminaBar;
 
+        public CanvasGroup DamageInformation;
+
         public static PlayerStats instance { get; private set; }
 
         private void Awake()
@@ -68,9 +70,12 @@ namespace Assets.Scripts.DungeonCrawlerScripts
 
         private void Update()
         {
-            if(!isBattle)
-                GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation = Quaternion.Slerp(GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation, 
+            if (!isBattle)
+            {
+                GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation = Quaternion.Slerp(GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation,
                     Quaternion.Euler(Vector3.zero), 5f * Time.deltaTime);
+                DamageInformation.alpha = 0;
+            }
         }
 
        public void StaminaRefill()
@@ -87,6 +92,18 @@ namespace Assets.Scripts.DungeonCrawlerScripts
                     }
                 }
                 StaminaBar.value += 1;
+            }
+        }
+
+        public IEnumerator DamageInfoFadeOut()
+        {
+            if (DamageInformation.alpha > 0)
+            {
+                while (DamageInformation.alpha > 0)
+                {
+                    yield return new WaitForSeconds(0.01f);
+                    DamageInformation.alpha -= 0.002f;
+                }
             }
         }
     }

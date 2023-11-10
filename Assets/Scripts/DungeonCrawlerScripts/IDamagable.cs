@@ -1,4 +1,6 @@
 ﻿
+using System.Collections;
+
 namespace Assets.Scripts.DungeonCrawlerScripts
 {
     interface IDamagable

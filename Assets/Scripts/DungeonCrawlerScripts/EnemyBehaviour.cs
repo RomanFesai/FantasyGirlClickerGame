@@ -11,13 +11,12 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
     [SerializeField] private bool isPlayerInRange;
     [SerializeField] private GameObject _healthBar;
 
-    [Header("HitPopUp")]
-    [SerializeField] private Camera _camera;
-    [SerializeField] private GameObject hitPopUpObj;
-    [SerializeField] private GameObject canvas;
-    
     [field: SerializeField] public int maxHealth { get; set; }
     [field: SerializeField] public int currentHealth { get; set; }
+
+    [Header("HitPopUp")]
+    [SerializeField] private GameObject hitPopUpObj;
+    [SerializeField] private GameObject _mainCamera;
 
     private Vector3 _transformY;
     private CinemachineVirtualCamera playerCam;
@@ -49,14 +48,15 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
     {
         if (isBattle)
         {
-            currentHealth -= playerDamage;
             StartCoroutine(getDamageVisuals());
+            currentHealth -= playerDamage;
             if (currentHealth <= 0)
-            { 
+            {
                 isBattle = false;
                 isPlayerInRange = false;
                 PlayerStats.instance.isBattle = false;
-                Die(); 
+                gameObject.GetComponent<SphereCollider>().enabled = false;
+                Invoke("Die", 0.2f);
             }
         }
     }
@@ -104,18 +104,11 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
         yield return new WaitForSeconds(0.1f);
         transform.localScale = new Vector3(0.100317448f, 0.100317448f, 0.100317448f);
         Vector3 mousePos = Input.mousePosition;
+        mousePos.z = 2.0f;
         var obj = Instantiate(hitPopUpObj, mousePos, Quaternion.identity);
-        obj.transform.SetParent(canvas.transform, true);
-        yield return new WaitForSeconds(2f);
+        obj.transform.SetParent(_mainCamera.transform, true);
+        obj.transform.position = _mainCamera.GetComponent<Camera>().ScreenToWorldPoint(mousePos);
+        yield return new WaitForSeconds(.3f);
         Destroy(obj);
     }
-
-    /*private IEnumerator hitsPopUpAnim()
-    {
-        Vector3 mousePos = Input.mousePosition;
-        var obj = Instantiate(hitPopUpObj, mousePos, transform.rotation);
-        obj.transform.SetParent(canvas.transform, true);
-        yield return new WaitForSeconds(2f);
-        Destroy(obj);
-    }*/
 }
