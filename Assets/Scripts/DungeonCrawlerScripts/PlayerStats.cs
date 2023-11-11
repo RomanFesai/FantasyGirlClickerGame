@@ -60,10 +60,6 @@ namespace Assets.Scripts.DungeonCrawlerScripts
                 StaminaBar.value += 5;
             }
 
-            /*if(StaminaBar.value <= 0)
-                canAttack = false;
-            else if(!GameOverWindow.gameOver)
-                canAttack = true;*/
             if(StaminaBar.value == maxStamina && !GameOverWindow.gameOver)
                 canAttack = true;
         }

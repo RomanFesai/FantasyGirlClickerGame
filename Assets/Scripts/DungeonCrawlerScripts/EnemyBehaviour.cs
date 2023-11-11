@@ -56,6 +56,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
                 isPlayerInRange = false;
                 PlayerStats.instance.isBattle = false;
                 gameObject.GetComponent<SphereCollider>().enabled = false;
+                _healthBar.GetComponent<Slider>().value = 0;
                 Invoke("Die", 0.2f);
             }
         }
@@ -104,7 +105,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
         yield return new WaitForSeconds(0.1f);
         transform.localScale = new Vector3(0.100317448f, 0.100317448f, 0.100317448f);
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = 2.0f;
+        mousePos.z = 1.5f;
         var obj = Instantiate(hitPopUpObj, mousePos, Quaternion.identity);
         obj.transform.SetParent(_mainCamera.transform, true);
         obj.transform.position = _mainCamera.GetComponent<Camera>().ScreenToWorldPoint(mousePos);
