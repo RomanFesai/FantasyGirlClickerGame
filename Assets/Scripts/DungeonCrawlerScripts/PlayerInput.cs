@@ -29,7 +29,7 @@ public class PlayerInput : MonoBehaviour
 
         if (PlayerStats.instance.isBattle)
             controlButtons.SetActive(false);
-        else
+        else if(DialogueManager.GetInstance() != null && !DialogueManager.GetInstance().dialogueIsPlaying)
             controlButtons.SetActive(true);
     }
 

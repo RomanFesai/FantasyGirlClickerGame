@@ -1,9 +1,31 @@
 {
-    "idSave": 17,
+    "idSave": 2930,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
-    "currentPlayerLvl": 1,
-    "currentfillAmount": 0.3500000238418579,
-    "currentPointsDivider": 20.0
+    "currentPlayerLvl": 4,
+    "currentfillAmount": 0.6875,
+    "currentPointsDivider": 160.0,
+    "isUnlocked": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "isCompleted": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ]
 }

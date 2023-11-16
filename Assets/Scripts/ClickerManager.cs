@@ -1,3 +1,4 @@
+using Assets.Scripts.LevelsList;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -71,6 +72,7 @@ public class ClickerManager : MonoBehaviour
 
 #if UNITY_WEBGL
         MySave();
+        LevelsManager.GetInstance().MySave();
 #endif
         StartCoroutine(pointsPopUpAnim());
     }
@@ -149,6 +151,12 @@ public class ClickerManager : MonoBehaviour
         lvlProgressBar.startLvl = 0;
         lvlProgressBar.playerLvl.text = lvlProgressBar.startLvl.ToString();
         points_divider = 10;
+
+        for (int i = 1; i < LevelsManager.GetInstance().level.Length; i++)
+        {
+            LevelsManager.GetInstance().level[i].isCompleted = false;
+            LevelsManager.GetInstance().level[i].isUnlocked = false;
+        }
     }
 
     private IEnumerator LevelUp()

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.LevelsList;
+using System.Collections;
 using UnityEngine;
 using YG;
 
@@ -9,6 +10,9 @@ namespace Assets.Scripts.UI
         [SerializeField] private Animator _animator;
         [SerializeField] private Animator saveNotification;
         [SerializeField] private bool isSettingsOn;
+
+        [Header("ClickerManager")]
+        [SerializeField] private ClickerManager clickerManager;
 
         private void Start()
         {
@@ -33,7 +37,8 @@ namespace Assets.Scripts.UI
         public void SaveGameBtn()
         {
             saveNotification.Play("GameSavedNotification");
-            YandexGame.SaveProgress();
+            LevelsManager.GetInstance().MySave();
+            clickerManager.MySave();
         }
 
         public void EraseGameBtn()

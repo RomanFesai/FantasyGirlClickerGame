@@ -862,7 +862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7cb06449fd12a145823f94544b93c45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 789ba547b4af7664b93db683205568a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -902,7 +902,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: b6001316b19d036469dd8e6bd155a927, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d7c8af6b04b3b4f47bc559f636e5c3f4, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1527,6 +1527,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471749925}
   m_CullTransparentMesh: 1
+--- !u!1 &503783029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503783030}
+  - component: {fileID: 503783031}
+  m_Layer: 0
+  m_Name: LevelsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &503783030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503783029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 249.82817, y: 336.785, z: 0.8723755}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &503783031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503783029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529070c42abb1f146b992b79e9f2a362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level:
+  - number: 0
+    requiredPlayerLevel: 0
+    isUnlocked: 1
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 2
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
+  - number: 1
+    requiredPlayerLevel: 5
+    isUnlocked: 0
+    isCompleted: 0
 --- !u!1001 &504048664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2800,6 +2881,7 @@ MonoBehaviour:
   _animator: {fileID: 938791850}
   saveNotification: {fileID: 1809175860}
   isSettingsOn: 0
+  clickerManager: {fileID: 1968567939}
 --- !u!1 &992209777
 GameObject:
   m_ObjectHideFlags: 0

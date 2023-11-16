@@ -36,9 +36,14 @@ namespace Assets.Scripts
             StartCoroutine(loadLevelByName(loadLevelName));
         }
 
+        public void RestartCurrentLevel()
+        {
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
+        }
+
         IEnumerator LoadLevel(int levelIndex)
         {
-            transition.SetTrigger("Start");
+            //transition.SetTrigger("Start");
 
             yield return new WaitForSeconds(transitionTime);
 

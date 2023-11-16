@@ -24,6 +24,10 @@ namespace Assets.Scripts.DungeonCrawlerScripts
 
         public CanvasGroup DamageInformation;
 
+        [Header("StatusIcon")]
+        public GameObject defaultStatusIcon;
+        public Sprite[] statusIcons;
+
         public static PlayerStats instance { get; private set; }
 
         private void Awake()
@@ -66,6 +70,7 @@ namespace Assets.Scripts.DungeonCrawlerScripts
 
         private void Update()
         {
+            StatusIconChange();
             if (!isBattle)
             {
                 GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation = Quaternion.Slerp(GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation,
@@ -100,6 +105,19 @@ namespace Assets.Scripts.DungeonCrawlerScripts
                     yield return new WaitForSeconds(0.01f);
                     DamageInformation.alpha -= 0.002f;
                 }
+            }
+        }
+
+        private void StatusIconChange()
+        {
+            switch (HealthBar.value)
+            {
+                case 0:
+                    defaultStatusIcon.GetComponent<Image>().sprite = statusIcons[1];
+                    break;
+                default:
+                    defaultStatusIcon.GetComponent<Image>().sprite = statusIcons[0];
+                    break;
             }
         }
     }

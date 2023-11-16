@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.DungeonCrawlerScripts;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.UI
 {
@@ -17,6 +18,6 @@ namespace Assets.Scripts.UI
                 PlayerStats.instance.canAttack = false;
                 _gameOverWindow.SetActive(true); 
             }
-        }       
+        }  
     }
 }
