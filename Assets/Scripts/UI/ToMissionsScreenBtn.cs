@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,21 +10,15 @@ public class ToMissionsScreenBtn : MonoBehaviour
 
     public void LoadMissionScreenBtn()
     {
-        StartCoroutine(LoadMissionScreen());
+        if (animator != null && LevelLoader.GetInstance() != null)
+        {
+            animator.Play("ToMissionBtn");
+            LevelLoader.GetInstance().LoadLevelByName("LevelSelect");
+        }
     }
 
     public void ReturnToMainScreen()
     {
-        SceneManager.LoadScene("ClickerScene");
-    } 
-
-    private IEnumerator LoadMissionScreen()
-    {
-        if (animator != null)
-        {
-            animator.Play("ToMissionBtn");
-            yield return new WaitForSeconds(1f);
-            SceneManager.LoadScene("LevelSelect");
-        }
-    } 
+        LevelLoader.GetInstance().LoadLevelByName("ClickerScene");
+    }
 }

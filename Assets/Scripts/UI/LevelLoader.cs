@@ -43,7 +43,7 @@ namespace Assets.Scripts
 
         IEnumerator LoadLevel(int levelIndex)
         {
-            //transition.SetTrigger("Start");
+            transition.SetTrigger("Start");
 
             yield return new WaitForSeconds(transitionTime);
 
@@ -52,7 +52,7 @@ namespace Assets.Scripts
 
         IEnumerator loadLevelByName(string loadLevelName)
         {
-            //transition.SetTrigger("Start");
+            transition.SetTrigger("Start");
 
             yield return new WaitForSeconds(transitionTime);
 

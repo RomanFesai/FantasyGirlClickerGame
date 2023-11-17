@@ -14,6 +14,8 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
     [field: SerializeField] public int maxHealth { get; set; }
     [field: SerializeField] public int currentHealth { get; set; }
 
+    [SerializeField] private int minusPlayerStaminaValue;
+
     [Header("HitPopUp")]
     [SerializeField] private GameObject hitPopUpObj;
     [SerializeField] private GameObject _mainCamera;
@@ -38,7 +40,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
         }
     }
 
-    public void Die()
+    public virtual void Die()
     {
         _healthBar.SetActive(false);
         Destroy(gameObject);
@@ -76,7 +78,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
         if(PlayerStats.instance.StaminaBar.value > 0 && isBattle && PlayerStats.instance.canAttack)
         {
             getDamage(PlayerStats.instance.damage);
-            PlayerStats.instance.StaminaBar.value -= 30;
+            PlayerStats.instance.StaminaBar.value -= minusPlayerStaminaValue;
             PlayerStats.instance.staminaRegenTimer = 0f;
 
         }
