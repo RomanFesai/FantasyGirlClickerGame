@@ -36,7 +36,7 @@ public class LevelExit : MonoBehaviour
         {
             LevelCompleteWindow.SetActive(true);
 
-            if (Rewardable)
+            if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
             {
                 LevelCompleteWindowText.text = "Level Complete! You Got A Reward";
                 LevelCompleteWindowButtonText.text = "Get Reward and Exit";
