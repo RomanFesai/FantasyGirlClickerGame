@@ -55,6 +55,7 @@ namespace Assets.Scripts.LevelsList
             {
                 level[i].isCompleted = YandexGame.savesData.isCompleted[i];
                 level[i].isUnlocked = YandexGame.savesData.isUnlocked[i];
+                level[i].isRewarded = YandexGame.savesData.isRewarded[i];
             }
         }
 
@@ -66,6 +67,7 @@ namespace Assets.Scripts.LevelsList
             {
                 YandexGame.savesData.isCompleted[i] = level[i].isCompleted;
                 YandexGame.savesData.isUnlocked[i] = level[i].isUnlocked;
+                YandexGame.savesData.isRewarded[i] = level[i].isRewarded;
             }
 
             // Теперь остаётся сохранить данные

@@ -5,4 +5,5 @@ public class Level
     public int requiredPlayerLevel;
     public bool isUnlocked;
     public bool isCompleted;
+    public bool isRewarded;
 }

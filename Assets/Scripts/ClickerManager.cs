@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using Assets.Scripts.LevelsList;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,12 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private float add_points;
     [SerializeField] private int add_Lvl;
     [SerializeField] private float points_divider;
+
+    [Header("BonusButtonsSettings")]
+    [SerializeField] private float addExtra_points;
+    [SerializeField] private int default_timer = 60;
+    [SerializeField] private TextMeshProUGUI addExtra_pointsText;
+
     [Header("PointsPopUp")]
     [SerializeField] private GameObject pointsPopUpObj;
     [SerializeField] private TextMeshProUGUI pointsPopUp;
@@ -53,6 +60,10 @@ public class ClickerManager : MonoBehaviour
             lvlProgressBar.playerLvl.text = lvlProgressBar.startLvl.ToString();
             lvlProgressBar.fillBar.fillAmount = 0;
             points_divider = points_divider * 2;
+            PlayerData.GetInstance().maxHealht += 10;
+            PlayerData.GetInstance().maxStamina += 10;
+            PlayerData.GetInstance().damage += 1;
+            PlayerData.GetInstance().MySave();
             StartCoroutine(LevelUp());
 
 #if UNITY_WEBGL
@@ -60,6 +71,8 @@ public class ClickerManager : MonoBehaviour
             YandexGame.savesData.currentPointsDivider = points_divider;
 #endif
         }
+
+        addExtra_pointsText.text = "Клик +" + addExtra_points + " на время";
     }
 
     public void ClickDown()
@@ -98,7 +111,7 @@ public class ClickerManager : MonoBehaviour
     }
     private IEnumerator AutoClick(Button btn, TextMeshProUGUI timerText)
     {
-        int timer = 60;
+        int timer = default_timer;
         timerText.enabled = true;
         while(timer > 0)
         {
@@ -122,13 +135,14 @@ public class ClickerManager : MonoBehaviour
 
     private IEnumerator PlusClick(Button btn, TextMeshProUGUI timerText)
     {
-        int timer = 60;
+        int timer = default_timer;
         timerText.enabled = true;
+        float default_add_points = add_points;
         while (timer > 0)
         {
             timerText.text = timer.ToString();
             btn.interactable = false;
-            add_points = 5;
+            add_points = addExtra_points;
 
 #if UNITY_WEBGL
             YandexGame.savesData.currentfillAmount = lvlProgressBar.fillBar.fillAmount;
@@ -140,7 +154,7 @@ public class ClickerManager : MonoBehaviour
             timer--;
             yield return new WaitForSeconds(1f);
         }
-        add_points = 1;
+        add_points = default_add_points;
         timerText.enabled = false;
         btn.interactable = true;
     }
@@ -157,6 +171,8 @@ public class ClickerManager : MonoBehaviour
             LevelsManager.GetInstance().level[i].isCompleted = false;
             LevelsManager.GetInstance().level[i].isUnlocked = false;
         }
+
+        YandexGame.ResetSaveProgress();
     }
 
     private IEnumerator LevelUp()
@@ -186,6 +202,10 @@ public class ClickerManager : MonoBehaviour
         lvlProgressBar.fillBar.GetComponent<Image>().fillAmount = YandexGame.savesData.currentfillAmount;
         if (YandexGame.savesData.currentPointsDivider != 0)
             points_divider = YandexGame.savesData.currentPointsDivider;
+
+        add_points = PlayerData.GetInstance().add_points;
+        addExtra_points = PlayerData.GetInstance().addExtra_points;
+        default_timer = PlayerData.GetInstance().BonusBtnTimer;
     }
 
     public void MySave()

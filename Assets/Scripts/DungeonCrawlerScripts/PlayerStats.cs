@@ -45,6 +45,10 @@ namespace Assets.Scripts.DungeonCrawlerScripts
             GameOverWindow.gameOver = false;
             canAttack = true;
 
+            maxHealht = PlayerData.GetInstance().maxHealht;
+            maxStamina = PlayerData.GetInstance().maxStamina;
+            damage = PlayerData.GetInstance().damage;
+
             currentHealht = maxHealht;
             currentStamina = maxStamina;
 

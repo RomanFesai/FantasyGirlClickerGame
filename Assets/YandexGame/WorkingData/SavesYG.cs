@@ -15,8 +15,15 @@ namespace YG
         public int currentPlayerLvl;
         public float currentfillAmount;
         public float currentPointsDivider;
-        public bool[] isUnlocked = new bool[8];
-        public bool[] isCompleted = new bool[8];
+        public int maxHealht;
+        public int damage;
+        public int maxStamina;
+        public float add_points;
+        public float addExtra_points;
+        public int BonusBtnTimer;
+        public bool[] isUnlocked = new bool[9];
+        public bool[] isCompleted = new bool[9];
+        public bool[] isRewarded = new bool[9];
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
 
@@ -26,6 +33,13 @@ namespace YG
             // Допустим, задать значения по умолчанию для отдельных элементов массива
             isUnlocked[0] = true;
             isCompleted[0] = false;
+
+            maxHealht = 50;
+            damage = 1;
+            maxStamina = 100;
+            add_points = 1;
+            addExtra_points = 2;
+            BonusBtnTimer = 30;
         }
     }
 }
