@@ -29,6 +29,20 @@ public class LevelExit : MonoBehaviour
         playerInRange = false;
     }
 
+    private void Start()
+    {
+        if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
+        {
+            LevelCompleteWindowText.text = "Level Complete! You Got A Reward";
+            LevelCompleteWindowButtonText.text = "Get Reward and Exit";
+        }
+        else if (Rewardable == false || LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == true)
+        {
+            LevelCompleteWindowText.text = "Level Complete!";
+            LevelCompleteWindowButtonText.text = "Exit";
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -36,7 +50,7 @@ public class LevelExit : MonoBehaviour
         {
             LevelCompleteWindow.SetActive(true);
 
-            if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
+           /* if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
             {
                 LevelCompleteWindowText.text = "Level Complete! You Got A Reward";
                 LevelCompleteWindowButtonText.text = "Get Reward and Exit";
@@ -45,7 +59,7 @@ public class LevelExit : MonoBehaviour
             {
                 LevelCompleteWindowText.text = "Level Complete!";
                 LevelCompleteWindowButtonText.text = "Exit";
-            }
+            }*/
 
             if (gameplayUI != null)
                 foreach (GameObject obj in gameplayUI)

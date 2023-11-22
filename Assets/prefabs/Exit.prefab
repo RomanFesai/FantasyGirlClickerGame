@@ -55,8 +55,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.34234634, y: 1, z: 0.61191434}
+  m_Center: {x: -0.00504338, y: 0, z: -0.056486018}
 --- !u!114 &4985420108571577781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +70,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInRange: 0
+  Rewardable: 0
   levelCompleteNumber: 1
+  LevelCompleteWindowText: {fileID: 0}
+  LevelCompleteWindowButtonText: {fileID: 0}
+  player: {fileID: 0}
+  gameplayUI: []
+  LevelCompleteWindow: {fileID: 0}
+  extra_points: 0
+  bonusBtnTimer: 0
+  add_points: 0
 --- !u!1 &5147593988135611530
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,3 +313,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4985420107443997508}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7541695295345426126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3280519133430969738, guid: a71be3e7990efb040a07565c43cbb198,
+    type: 3}
+  m_PrefabInstance: {fileID: 4985420107443997508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1944007760592687252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541695295345426126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}

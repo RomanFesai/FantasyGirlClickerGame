@@ -138,11 +138,12 @@ public class ClickerManager : MonoBehaviour
         int timer = default_timer;
         timerText.enabled = true;
         float default_add_points = add_points;
+        add_points += addExtra_points;
         while (timer > 0)
         {
             timerText.text = timer.ToString();
             btn.interactable = false;
-            add_points = addExtra_points;
+            //add_points = addExtra_points;
 
 #if UNITY_WEBGL
             YandexGame.savesData.currentfillAmount = lvlProgressBar.fillBar.fillAmount;
