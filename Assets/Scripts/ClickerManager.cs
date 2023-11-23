@@ -13,7 +13,6 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private LvLProgressBar lvlProgressBar;
     [SerializeField] private float add_points;
     [SerializeField] private int add_Lvl;
-    [SerializeField] private float points_divider;
 
     [Header("BonusButtonsSettings")]
     [SerializeField] private float addExtra_points;
@@ -54,12 +53,13 @@ public class ClickerManager : MonoBehaviour
 
     private void Update()
     {
-        if (lvlProgressBar.fillBar.fillAmount == 1)
+        lvlProgressBar.fillBar.fillAmount = lvlProgressBar.currentFill / lvlProgressBar.maxFillToLvlUp;
+        if (lvlProgressBar.currentFill >= lvlProgressBar.maxFillToLvlUp)
         {
             lvlProgressBar.startLvl += add_Lvl;
             lvlProgressBar.playerLvl.text = lvlProgressBar.startLvl.ToString();
-            lvlProgressBar.fillBar.fillAmount = 0;
-            points_divider = points_divider * 2;
+            lvlProgressBar.currentFill = 0;
+            lvlProgressBar.maxFillToLvlUp += lvlProgressBar.addMaxPointsToLvlUp;
             PlayerData.GetInstance().maxHealht += 10;
             PlayerData.GetInstance().maxStamina += 10;
             PlayerData.GetInstance().damage += 1;
@@ -68,7 +68,7 @@ public class ClickerManager : MonoBehaviour
 
 #if UNITY_WEBGL
             YandexGame.savesData.currentPlayerLvl = lvlProgressBar.startLvl;
-            YandexGame.savesData.currentPointsDivider = points_divider;
+            YandexGame.savesData.PointsToLvlUp = lvlProgressBar.maxFillToLvlUp;
 #endif
         }
 
@@ -77,10 +77,10 @@ public class ClickerManager : MonoBehaviour
 
     public void ClickDown()
     {
-        lvlProgressBar.fillBar.fillAmount += add_points / points_divider;
+        lvlProgressBar.currentFill += add_points;
 
 #if UNITY_WEBGL
-        YandexGame.savesData.currentfillAmount = lvlProgressBar.fillBar.fillAmount;
+        YandexGame.savesData.currentfillAmount = lvlProgressBar.currentFill;
 #endif
 
 #if UNITY_WEBGL
@@ -117,10 +117,10 @@ public class ClickerManager : MonoBehaviour
         {
             timerText.text = timer.ToString();
             btn.interactable = false;
-            lvlProgressBar.fillBar.fillAmount += add_points / points_divider;
+            lvlProgressBar.currentFill += add_points;
 
 #if UNITY_WEBGL
-            YandexGame.savesData.currentfillAmount = lvlProgressBar.fillBar.fillAmount;
+            YandexGame.savesData.currentfillAmount = lvlProgressBar.currentFill;
 #endif
 
 /*#if UNITY_WEBGL
@@ -146,7 +146,7 @@ public class ClickerManager : MonoBehaviour
             //add_points = addExtra_points;
 
 #if UNITY_WEBGL
-            YandexGame.savesData.currentfillAmount = lvlProgressBar.fillBar.fillAmount;
+            YandexGame.savesData.currentfillAmount = lvlProgressBar.currentFill;
 #endif
 
 /*#if UNITY_WEBGL
@@ -162,10 +162,10 @@ public class ClickerManager : MonoBehaviour
 
     public void EraseGameBtn()
     {
-        lvlProgressBar.fillBar.fillAmount = 0;
+        lvlProgressBar.currentFill = 0;
         lvlProgressBar.startLvl = 0;
         lvlProgressBar.playerLvl.text = lvlProgressBar.startLvl.ToString();
-        points_divider = 10;
+        lvlProgressBar.maxFillToLvlUp = 50;
 
         for (int i = 1; i < LevelsManager.GetInstance().level.Length; i++)
         {
@@ -200,9 +200,8 @@ public class ClickerManager : MonoBehaviour
         // Получаем данные из плагина и делаем с ними что хотим
         // Например, мы хотил записать в компонент UI.Text сколько у игрока монет:
         lvlProgressBar.playerLvl.text = YandexGame.savesData.currentPlayerLvl.ToString();
-        lvlProgressBar.fillBar.GetComponent<Image>().fillAmount = YandexGame.savesData.currentfillAmount;
-        if (YandexGame.savesData.currentPointsDivider != 0)
-            points_divider = YandexGame.savesData.currentPointsDivider;
+        lvlProgressBar.currentFill = YandexGame.savesData.currentfillAmount;
+        lvlProgressBar.maxFillToLvlUp = YandexGame.savesData.PointsToLvlUp;
 
         add_points = PlayerData.GetInstance().add_points;
         addExtra_points = PlayerData.GetInstance().addExtra_points;
@@ -213,9 +212,9 @@ public class ClickerManager : MonoBehaviour
     {
         // Записываем данные в плагин
         // Например, мы хотил сохранить количество монет игрока:
-        YandexGame.savesData.currentfillAmount = lvlProgressBar.fillBar.fillAmount;
+        YandexGame.savesData.currentfillAmount = lvlProgressBar.currentFill;
         YandexGame.savesData.currentPlayerLvl = lvlProgressBar.startLvl;
-        YandexGame.savesData.currentPointsDivider = points_divider;
+        YandexGame.savesData.PointsToLvlUp = lvlProgressBar.maxFillToLvlUp;
 
         // Теперь остаётся сохранить данные
         YandexGame.SaveProgress();

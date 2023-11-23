@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.761905, g: 0.78565925, b: 0.7304743, a: 1}
+  m_IndirectSpecularColor: {r: 0.76199085, g: 0.78570616, b: 0.7305071, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -38146,7 +38146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.4
+      value: -13.66
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38154,7 +38154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.13
+      value: 13.02
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62860,17 +62860,17 @@ PrefabInstance:
     - target: {fileID: 4985420108571577781, guid: cf2d93832ad6bbc48b93422c394c6952,
         type: 3}
       propertyPath: add_points
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4985420108571577781, guid: cf2d93832ad6bbc48b93422c394c6952,
         type: 3}
       propertyPath: extra_points
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4985420108571577781, guid: cf2d93832ad6bbc48b93422c394c6952,
         type: 3}
       propertyPath: bonusBtnTimer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4985420108571577781, guid: cf2d93832ad6bbc48b93422c394c6952,
         type: 3}
@@ -82486,7 +82486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.03
+      value: -19.82
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalPosition.y
@@ -103906,9 +103906,9 @@ MonoBehaviour:
   - {fileID: 761729657}
   - {fileID: 1650400443}
   LevelCompleteWindow: {fileID: 1406350787}
-  extra_points: 25
-  bonusBtnTimer: 20
-  add_points: 11
+  extra_points: 10
+  bonusBtnTimer: 10
+  add_points: 5
 --- !u!65 &4985420108131601311
 BoxCollider:
   m_ObjectHideFlags: 0

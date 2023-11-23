@@ -5262,6 +5262,9 @@ MonoBehaviour:
   startLvl: 0
   fillBar: {fileID: 992209779}
   playerLvl: {fileID: 1238545948}
+  maxFillToLvlUp: 50
+  currentFill: 0
+  addMaxPointsToLvlUp: 50
 --- !u!1 &1705012362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5880,7 +5883,6 @@ MonoBehaviour:
   lvlProgressBar: {fileID: 1574061809}
   add_points: 1
   add_Lvl: 1
-  points_divider: 10
   addExtra_points: 5
   default_timer: 60
   addExtra_pointsText: {fileID: 1443415238}

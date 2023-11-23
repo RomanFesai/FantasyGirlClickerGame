@@ -10,6 +10,9 @@ public class LvLProgressBar : MonoBehaviour
     public int startLvl;
     public Image fillBar;
     public TextMeshProUGUI playerLvl;
+    public float maxFillToLvlUp;
+    public float currentFill;
+    public float addMaxPointsToLvlUp;
 
     // Подписываемся на событие GetDataEvent в OnEnable
     private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
@@ -31,7 +34,7 @@ public class LvLProgressBar : MonoBehaviour
     private void GetLoad()
     {
         startLvl = YandexGame.savesData.currentPlayerLvl;
-        fillBar.GetComponent<Image>().fillAmount = YandexGame.savesData.currentfillAmount;
+        currentFill = YandexGame.savesData.currentfillAmount;
         playerLvl.text = startLvl.ToString();
     }
 }

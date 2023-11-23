@@ -14,7 +14,7 @@ namespace YG
         // Ваши сохранения
         public int currentPlayerLvl;
         public float currentfillAmount;
-        public float currentPointsDivider;
+        public float PointsToLvlUp;
         public int maxHealht;
         public int damage;
         public int maxStamina;
@@ -34,6 +34,7 @@ namespace YG
             isUnlocked[0] = true;
             isCompleted[0] = false;
 
+            PointsToLvlUp = 50;
             maxHealht = 50;
             damage = 1;
             maxStamina = 100;
