@@ -50,6 +50,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
     {
         if (isBattle)
         {
+            AudioManager.instance?.PlayOneShot("Enemy Hit");
             StartCoroutine(getDamageVisuals());
             currentHealth -= playerDamage;
             if (currentHealth <= 0)

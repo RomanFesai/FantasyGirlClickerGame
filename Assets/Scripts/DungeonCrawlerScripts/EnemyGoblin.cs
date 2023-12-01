@@ -23,6 +23,7 @@ namespace Assets.Scripts.DungeonCrawlerScripts
                 {
                     PlayerStats.instance.HealthBar.value -= _damage;
                     PlayerStats.instance.DamageInformation.alpha = 0.4f;
+                    CameraShake.instance.Play(.15f, .4f);
                     StartCoroutine(PlayerStats.instance.DamageInfoFadeOut());
                     _attackTimer = 0f;
                 }

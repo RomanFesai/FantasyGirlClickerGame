@@ -49,6 +49,9 @@ public class ClickerManager : MonoBehaviour
             // Если плагин еще не прогрузился, то метод не выполнится в методе Start,
             // но он запустится при вызове события GetDataEvent, после прогрузки плагина
         }
+
+        AudioManager.instance?.StopAll();
+        AudioManager.instance?.Play("Clicker Theme");
     }
 
     private void Update()
@@ -77,6 +80,7 @@ public class ClickerManager : MonoBehaviour
 
     public void ClickDown()
     {
+        AudioManager.instance?.Play("Click");
         lvlProgressBar.currentFill += add_points;
 
 #if UNITY_WEBGL
@@ -180,6 +184,8 @@ public class ClickerManager : MonoBehaviour
     {
         if (LevelUpArrowsObj != null && LevelUpTextObj != null)
         {
+            AudioManager.instance?.Play("Level Up");
+            AudioManager.instance?.Play("Level Up(2)");
             LevelUpArrowsObj.SetActive(true);
             yield return new WaitForSeconds(0.5f);
             LevelUpArrowsObj.SetActive(false);

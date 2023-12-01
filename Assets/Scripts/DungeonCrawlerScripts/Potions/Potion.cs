@@ -22,6 +22,7 @@ public class Potion : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudioManager.instance?.PlayOneShot("Pick Up");
             switch (potionType)
             {
                 case PotionType.Health:
