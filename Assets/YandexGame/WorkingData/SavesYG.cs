@@ -21,9 +21,9 @@ namespace YG
         public float add_points;
         public float addExtra_points;
         public int BonusBtnTimer;
-        public bool[] isUnlocked = new bool[9];
-        public bool[] isCompleted = new bool[9];
-        public bool[] isRewarded = new bool[9];
+        public bool[] isUnlocked = new bool[10];
+        public bool[] isCompleted = new bool[10];
+        public bool[] isRewarded = new bool[10];
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
 

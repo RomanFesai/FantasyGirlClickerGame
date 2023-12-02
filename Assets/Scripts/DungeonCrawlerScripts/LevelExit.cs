@@ -33,13 +33,13 @@ public class LevelExit : MonoBehaviour
     {
         if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
         {
-            LevelCompleteWindowText.text = "Level Complete! You Got A Reward";
-            LevelCompleteWindowButtonText.text = "Get Reward and Exit";
+            LevelCompleteWindowText.text = "Уровень Пройден!Кликер улучшен!";
+            LevelCompleteWindowButtonText.text = "Выход";
         }
         else if (Rewardable == false || LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == true)
         {
-            LevelCompleteWindowText.text = "Level Complete!";
-            LevelCompleteWindowButtonText.text = "Exit";
+            LevelCompleteWindowText.text = "Уровень Пройден!";
+            LevelCompleteWindowButtonText.text = "Выход";
         }
     }
 
@@ -50,17 +50,6 @@ public class LevelExit : MonoBehaviour
         {
             LevelCompleteWindow.SetActive(true);
 
-           /* if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
-            {
-                LevelCompleteWindowText.text = "Level Complete! You Got A Reward";
-                LevelCompleteWindowButtonText.text = "Get Reward and Exit";
-            }
-            else if(Rewardable == false || LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == true)
-            {
-                LevelCompleteWindowText.text = "Level Complete!";
-                LevelCompleteWindowButtonText.text = "Exit";
-            }*/
-
             if (gameplayUI != null)
                 foreach (GameObject obj in gameplayUI)
                     obj.SetActive(false);
@@ -68,7 +57,6 @@ public class LevelExit : MonoBehaviour
             if (player != null)
             {
                 player.GetComponent<PlayerMovement>().enabled = false;
-                //animator.SetBool("PlayerMoving", false);
             }
         }
     }

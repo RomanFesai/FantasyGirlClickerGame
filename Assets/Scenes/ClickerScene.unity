@@ -375,18 +375,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1968567941}
-        m_TargetAssemblyTypeName: Assets.Scripts.ShowRewVideo, Assembly-CSharp
-        m_MethodName: ShowAd
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &98503787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,32 +1715,37 @@ MonoBehaviour:
     isCompleted: 0
     isRewarded: 0
   - number: 3
-    requiredPlayerLevel: 15
-    isUnlocked: 0
-    isCompleted: 0
-    isRewarded: 0
-  - number: 4
     requiredPlayerLevel: 20
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
-  - number: 5
+  - number: 4
     requiredPlayerLevel: 30
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
-  - number: 6
+  - number: 5
     requiredPlayerLevel: 35
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
-  - number: 7
+  - number: 6
     requiredPlayerLevel: 40
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
-  - number: 8
+  - number: 7
     requiredPlayerLevel: 45
+    isUnlocked: 0
+    isCompleted: 0
+    isRewarded: 0
+  - number: 8
+    requiredPlayerLevel: 50
+    isUnlocked: 0
+    isCompleted: 0
+    isRewarded: 0
+  - number: 9
+    requiredPlayerLevel: 55
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
@@ -1890,15 +1883,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "+\u0416\u0418\u0417\u041D\u0418"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e4b5cef700938684fb2bd633197865e3, type: 2}
-  m_sharedMaterial: {fileID: 7814319217306765819, guid: e4b5cef700938684fb2bd633197865e3,
+  m_fontAsset: {fileID: 11400000, guid: 92d52940c57db9243b1cb95741d7101d, type: 2}
+  m_sharedMaterial: {fileID: 7814319217306765819, guid: 92d52940c57db9243b1cb95741d7101d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3590324223
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 0.8352941}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2119,7 +2112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &623515441
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4358,15 +4351,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "+\u0423\u0440\u043E\u043D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e4b5cef700938684fb2bd633197865e3, type: 2}
-  m_sharedMaterial: {fileID: 7814319217306765819, guid: e4b5cef700938684fb2bd633197865e3,
+  m_fontAsset: {fileID: 11400000, guid: 92d52940c57db9243b1cb95741d7101d, type: 2}
+  m_sharedMaterial: {fileID: 7814319217306765819, guid: 92d52940c57db9243b1cb95741d7101d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3774873599
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 0.8784314}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4664,7 +4657,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00003633}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 320, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421430001
 MonoBehaviour:
@@ -4686,7 +4679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "+\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
+  m_text: "+\u0412\u044B\u043D\u043E\u0441\u043B\u0438\u0432\u043E\u0441\u0442\u044C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92d52940c57db9243b1cb95741d7101d, type: 2}
   m_sharedMaterial: {fileID: 7814319217306765819, guid: 92d52940c57db9243b1cb95741d7101d,
