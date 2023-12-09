@@ -9,7 +9,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
 {
     private protected bool isBattle;
     [SerializeField] private bool isPlayerInRange;
-    [SerializeField] private GameObject _healthBar;
+    [SerializeField] protected GameObject _healthBar;
 
     [field: SerializeField] public int maxHealth { get; set; }
     [field: SerializeField] public int currentHealth { get; set; }
@@ -21,7 +21,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
     [SerializeField] private GameObject _mainCamera;
 
     private Vector3 _transformY;
-    private CinemachineVirtualCamera playerCam;
+    protected CinemachineVirtualCamera playerCam;
     private Collider playerCollider;
 
     void Start()
@@ -46,7 +46,7 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
         Destroy(gameObject);
     }
 
-    public void getDamage(int playerDamage)
+    public virtual void getDamage(int playerDamage)
     {
         if (isBattle)
         {

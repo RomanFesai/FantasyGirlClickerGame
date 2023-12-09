@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75935227, g: 0.78727835, b: 0.73121643, a: 1}
+  m_IndirectSpecularColor: {r: 0.75918067, g: 0.7881735, b: 0.73100823, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -526,6 +526,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &237659024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -730,6 +731,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &266005385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2893,6 +2895,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!1 &971750886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,6 +3459,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &1192331727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4911,6 +4915,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &1686006186
 SpriteRenderer:
   m_ObjectHideFlags: 0

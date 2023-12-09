@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75943667, g: 0.78727555, b: 0.7312151, a: 1}
+  m_IndirectSpecularColor: {r: 0.75918067, g: 0.7881735, b: 0.73100823, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9389,6 +9389,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &305128737
@@ -15522,6 +15523,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &385782296
@@ -22231,6 +22233,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
         type: 3}
+      propertyPath: default_sprite_size.x
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
+        type: 3}
+      propertyPath: default_sprite_size.y
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
+        type: 3}
+      propertyPath: default_sprite_size.z
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
+        type: 3}
       propertyPath: minusPlayerStaminaValue
       value: 30
       objectReference: {fileID: 0}
@@ -28274,6 +28291,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!135 &942434208
@@ -30097,6 +30115,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 10
   _attackPeriodicity: 1
 --- !u!4 &1034940152
@@ -31071,6 +31090,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1083451121
@@ -32611,6 +32631,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1208728460
@@ -38177,6 +38198,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1238945572
@@ -39326,6 +39348,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1301290168
@@ -40547,6 +40570,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1356405200
@@ -55633,6 +55657,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 10
   _attackPeriodicity: 1
 --- !u!4 &1642478164
@@ -56465,6 +56490,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1668966098
@@ -104275,6 +104301,7 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
+  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 20
   _attackPeriodicity: 1
 --- !u!65 &2415640365777173195
@@ -104475,6 +104502,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _attackPeriodicity
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
+        type: 3}
+      propertyPath: default_sprite_size.x
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
+        type: 3}
+      propertyPath: default_sprite_size.y
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
+        type: 3}
+      propertyPath: default_sprite_size.z
+      value: 0.10031745
       objectReference: {fileID: 0}
     - target: {fileID: 2415640366097631144, guid: 1fb5e19eba43ed6438c7656cc203a904,
         type: 3}
@@ -105645,6 +105687,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336881915812202583, guid: 258a6f9e27d4b5e4f9998afcbacd6eac,
         type: 3}
+      propertyPath: default_sprite_size.x
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336881915812202583, guid: 258a6f9e27d4b5e4f9998afcbacd6eac,
+        type: 3}
+      propertyPath: default_sprite_size.y
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336881915812202583, guid: 258a6f9e27d4b5e4f9998afcbacd6eac,
+        type: 3}
+      propertyPath: default_sprite_size.z
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336881915812202583, guid: 258a6f9e27d4b5e4f9998afcbacd6eac,
+        type: 3}
       propertyPath: minusPlayerStaminaValue
       value: 10
       objectReference: {fileID: 0}
@@ -105743,6 +105800,21 @@ PrefabInstance:
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 2026165284}
+    - target: {fileID: 6598395918814126184, guid: 1b8da8a2c34376b489f8718afe9e3c2e,
+        type: 3}
+      propertyPath: default_sprite_size.x
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598395918814126184, guid: 1b8da8a2c34376b489f8718afe9e3c2e,
+        type: 3}
+      propertyPath: default_sprite_size.y
+      value: 0.10031745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598395918814126184, guid: 1b8da8a2c34376b489f8718afe9e3c2e,
+        type: 3}
+      propertyPath: default_sprite_size.z
+      value: 0.10031745
+      objectReference: {fileID: 0}
     - target: {fileID: 6598395918814126184, guid: 1b8da8a2c34376b489f8718afe9e3c2e,
         type: 3}
       propertyPath: minusPlayerStaminaValue
