@@ -79,7 +79,11 @@ namespace Assets.Scripts.DungeonCrawlerScripts
             {
                 GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation = Quaternion.Slerp(GetComponentInChildren<CinemachineVirtualCamera>().transform.localRotation,
                     Quaternion.Euler(Vector3.zero), 5f * Time.deltaTime);
-                DamageInformation.alpha = 0;
+            }
+
+            if(!isBattle && DamageInformation.alpha > 0)
+            {
+                StartCoroutine(DamageInfoFadeOut());
             }
         }
 

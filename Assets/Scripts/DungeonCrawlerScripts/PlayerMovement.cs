@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float transitionSpeed = 10f;
     public float transitionRotationSpeed = 500f;
 
-    Vector3 targetGridPos;
+    public static Vector3 targetGridPos; //static for teleports
     Vector3 prevTargetGridPos;
     Vector3 targetRotation;
 

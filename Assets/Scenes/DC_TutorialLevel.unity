@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75918067, g: 0.7881735, b: 0.73100823, a: 1}
+  m_IndirectSpecularColor: {r: 0.75920653, g: 0.78814924, b: 0.7310023, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -526,7 +526,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &237659024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -731,7 +730,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &266005385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -851,45 +849,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1927367747}
     m_Modifications:
-    - target: {fileID: 1093577914464490, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 1148613061152340, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_Name
       value: tree_1
       objectReference: {fileID: 0}
-    - target: {fileID: 1148613061152340, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1148613061152340, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1244885105455798, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1834748535681010, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalPosition.x
@@ -930,10 +896,6 @@ PrefabInstance:
     - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eded051879df4c147b9010199d240258, type: 3}
@@ -2895,7 +2857,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!1 &971750886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,7 +3420,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &1192331727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4915,7 +4875,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
 --- !u!212 &1686006186
 SpriteRenderer:
   m_ObjectHideFlags: 0

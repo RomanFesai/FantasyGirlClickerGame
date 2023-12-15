@@ -7,7 +7,7 @@ public class SpikeTrap : MonoBehaviour
 {
     [SerializeField] private int _damage = 40;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
