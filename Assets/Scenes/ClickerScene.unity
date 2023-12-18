@@ -3288,6 +3288,18 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 9c2d351ed2dd6344a94f26a58f194aa3, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Lever
+    clip: {fileID: 8300000, guid: e50f4f0680dac18468b4d5a61390ff1d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &925456408
 Transform:
   m_ObjectHideFlags: 0

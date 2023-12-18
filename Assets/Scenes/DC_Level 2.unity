@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75918067, g: 0.7881735, b: 0.73100823, a: 1}
+  m_IndirectSpecularColor: {r: 0.7591974, g: 0.7881619, b: 0.7310123, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9389,7 +9389,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &305128737
@@ -15523,7 +15522,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &385782296
@@ -25602,7 +25600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b1ddf651ed2d9c4c89bc5f1ac1cea03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35862b4171c094944a9494806ffa2849, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28291,7 +28289,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!135 &942434208
@@ -30115,7 +30112,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 10
   _attackPeriodicity: 1
 --- !u!4 &1034940152
@@ -31090,7 +31086,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1083451121
@@ -32631,7 +32626,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1208728460
@@ -38198,7 +38192,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1238945572
@@ -39348,7 +39341,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1301290168
@@ -40570,7 +40562,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1356405200
@@ -55657,7 +55648,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 10
   _attackPeriodicity: 1
 --- !u!4 &1642478164
@@ -56490,7 +56480,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1668966098
@@ -104301,7 +104290,6 @@ MonoBehaviour:
   hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
     type: 3}
   _mainCamera: {fileID: 2026165284}
-  default_sprite_size: {x: 0.10031745, y: 0.10031745, z: 0.10031745}
   _damage: 20
   _attackPeriodicity: 1
 --- !u!65 &2415640365777173195
