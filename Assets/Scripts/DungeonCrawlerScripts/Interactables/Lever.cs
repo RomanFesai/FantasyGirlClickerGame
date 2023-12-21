@@ -7,30 +7,30 @@ using UnityEngine.UI;
 
 public class Lever : InteractableObjBehaviour
 {
-    private bool objIsActive = false;
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject activateObj;
+    [SerializeField] private GameObject[] activateObj;
 
     private void Start()
     {
-        objIsActive = false;
+        animator.SetBool("isOn", activateObj[0].activeInHierarchy);
     }
-
     public void PullLever()
     {
-        if (!objIsActive)
+        foreach (var obj in activateObj)
         {
-            AudioManager.instance.Play("Lever");
-            activateObj.SetActive(true);
-            objIsActive = true;
-            animator.SetBool("isOn",objIsActive);
-        }
-        else
-        {
-            AudioManager.instance.Play("Lever");
-            activateObj.SetActive(false);
-            objIsActive = false;
-            animator.SetBool("isOn", objIsActive);
+
+            if (obj.activeInHierarchy == false)
+            {
+                AudioManager.instance.Play("Lever");
+                obj.SetActive(true);
+                animator.SetBool("isOn", activateObj[0].activeInHierarchy);
+            }
+            else
+            {
+                AudioManager.instance.Play("Lever");
+                obj.SetActive(false);
+                animator.SetBool("isOn", activateObj[0].activeInHierarchy);
+            }
         }
     }
 }

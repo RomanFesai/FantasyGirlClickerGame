@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 9194057752013653289}
   - component: {fileID: 1970188891267825848}
   - component: {fileID: 4234711025378317673}
-  - component: {fileID: 1536933193569855097}
+  - component: {fileID: 1755819827014810699}
   m_Layer: 0
   m_Name: lever
   m_TagString: Untagged
@@ -266,7 +266,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &1536933193569855097
+--- !u!114 &1755819827014810699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,5 +279,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionButton: {fileID: 0}
+  btnAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1755819827014810699}
+        m_TargetAssemblyTypeName: Lever, Assembly-CSharp
+        m_MethodName: PullLever
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   animator: {fileID: 4234711025378317673}
-  activateObj: {fileID: 0}
+  activateObj:
+  - {fileID: 0}
