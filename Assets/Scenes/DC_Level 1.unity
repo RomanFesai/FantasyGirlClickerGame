@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7592126, g: 0.78816587, b: 0.73101723, a: 1}
+  m_IndirectSpecularColor: {r: 0.7591243, g: 0.7881618, b: 0.73100334, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8652,10 +8652,10 @@ MonoBehaviour:
   - {fileID: 648943705}
   gameplayUI:
   - {fileID: 1439247012}
-  - {fileID: 283149571}
   - {fileID: 1530276837}
   - {fileID: 761729657}
   - {fileID: 1650400443}
+  ControlButtons: {fileID: 283149571}
   mainPlayerCam: {fileID: 0}
   dialoguePlayerCam: {fileID: 0}
   player: {fileID: 1611141616}
@@ -11431,6 +11431,52 @@ Transform:
   m_Father: {fileID: 788373127}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &824210473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824210475}
+  - component: {fileID: 824210474}
+  m_Layer: 0
+  m_Name: CheckDevice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &824210474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824210473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c1f40ddcd12445b86f92d8042b69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobileInputContainer: {fileID: 0}
+  testInIspector: 0
+--- !u!4 &824210475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824210473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.474053, y: 0.8389401, z: -3.4257615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824324589
 GameObject:
   m_ObjectHideFlags: 0
@@ -13958,7 +14004,7 @@ PrefabInstance:
     - target: {fileID: 5769189709144096746, guid: cd67f237b1432334aa4322b06824ef7f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -25.331635
+      value: -25.331665
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd67f237b1432334aa4322b06824ef7f, type: 3}

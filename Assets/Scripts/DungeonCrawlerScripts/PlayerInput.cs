@@ -19,6 +19,10 @@ public class PlayerInput : MonoBehaviour
     void Awake()
     {
         movement = GetComponent<PlayerMovement>();
+        if (!MobileInputManager.instance.IsMobileDevice())
+        {
+            controlButtons.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -29,7 +33,7 @@ public class PlayerInput : MonoBehaviour
 
         if (PlayerStats.instance.isBattle)
             controlButtons.SetActive(false);
-        else if(DialogueManager.GetInstance() != null && !DialogueManager.GetInstance().dialogueIsPlaying)
+        else if(DialogueManager.GetInstance() != null && !DialogueManager.GetInstance().dialogueIsPlaying && MobileInputManager.instance.IsMobileDevice())
             controlButtons.SetActive(true);
     }
 

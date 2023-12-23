@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour/*, IDataPersistence*/
 
     [Header("UI")]
     [SerializeField] private GameObject[] gameplayUI;
+    [SerializeField] private GameObject ControlButtons;
 
     private TextMeshProUGUI[] choicesText;
 
@@ -176,9 +177,12 @@ public class DialogueManager : MonoBehaviour/*, IDataPersistence*/
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
-        if(gameplayUI != null)
-            foreach(GameObject obj in gameplayUI)
+        if (gameplayUI != null)
+            foreach (GameObject obj in gameplayUI)
+            { 
                 obj.SetActive(false);
+                ControlButtons.SetActive(false);
+            }
 
         displayNameText.text = "???";
         portraitAnimator.Play("default");
@@ -208,6 +212,9 @@ public class DialogueManager : MonoBehaviour/*, IDataPersistence*/
         if (gameplayUI != null)
             foreach (GameObject obj in gameplayUI)
                 obj.SetActive(true);
+
+        if (MobileInputManager.instance.IsMobileDevice())
+            ControlButtons.SetActive(true);
 
         dialogueVariables.StopListening(currentStory);
 

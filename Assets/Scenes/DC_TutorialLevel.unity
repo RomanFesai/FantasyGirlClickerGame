@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75918114, g: 0.7881864, b: 0.7310182, a: 1}
+  m_IndirectSpecularColor: {r: 0.7592023, g: 0.78818524, b: 0.7310131, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -317,6 +317,52 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &160473843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 160473845}
+  - component: {fileID: 160473844}
+  m_Layer: 0
+  m_Name: CheckDevice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &160473844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160473843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c1f40ddcd12445b86f92d8042b69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobileInputContainer: {fileID: 0}
+  testInIspector: 0
+--- !u!4 &160473845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160473843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.474053, y: 0.8389401, z: -3.4257615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177963365
 GameObject:
   m_ObjectHideFlags: 0
@@ -8480,10 +8526,10 @@ MonoBehaviour:
   - {fileID: 2277573640174774066}
   gameplayUI:
   - {fileID: 328422658}
-  - {fileID: 5792591158887923198}
   - {fileID: 369449524}
   - {fileID: 889692538}
   - {fileID: 1680051289}
+  ControlButtons: {fileID: 5792591158887923198}
   mainPlayerCam: {fileID: 0}
   dialoguePlayerCam: {fileID: 0}
   player: {fileID: 1611141616}
