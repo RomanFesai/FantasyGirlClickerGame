@@ -705,7 +705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOADING...
+  m_text: "\u0417\u0410\u0413\u0420\u0423\u0417\u041A\u0410..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4b5cef700938684fb2bd633197865e3, type: 2}
   m_sharedMaterial: {fileID: 7814319217306765819, guid: e4b5cef700938684fb2bd633197865e3,
@@ -733,8 +733,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1725,27 +1725,27 @@ MonoBehaviour:
     isCompleted: 0
     isRewarded: 0
   - number: 5
-    requiredPlayerLevel: 35
+    requiredPlayerLevel: 999
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
   - number: 6
-    requiredPlayerLevel: 40
+    requiredPlayerLevel: 999
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
   - number: 7
-    requiredPlayerLevel: 45
+    requiredPlayerLevel: 999
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
   - number: 8
-    requiredPlayerLevel: 50
+    requiredPlayerLevel: 999
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0
   - number: 9
-    requiredPlayerLevel: 55
+    requiredPlayerLevel: 999
     isUnlocked: 0
     isCompleted: 0
     isRewarded: 0

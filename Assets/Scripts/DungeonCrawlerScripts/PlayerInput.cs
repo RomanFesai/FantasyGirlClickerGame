@@ -19,6 +19,10 @@ public class PlayerInput : MonoBehaviour
     void Awake()
     {
         movement = GetComponent<PlayerMovement>();
+    }
+
+    private void Start()
+    {
         if (!MobileInputManager.instance.IsMobileDevice())
         {
             controlButtons.SetActive(false);
