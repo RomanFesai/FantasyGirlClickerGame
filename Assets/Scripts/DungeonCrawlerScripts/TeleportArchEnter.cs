@@ -11,6 +11,7 @@ namespace Assets.Scripts.DungeonCrawlerScripts
         {
             if(other.gameObject.tag == "Player")
             {
+                AudioManager.instance?.Play("Teleport");
                 PlayerMovement.targetGridPos = Exit.transform.position;
                 other.gameObject.transform.position = Exit.transform.position;
             }

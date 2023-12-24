@@ -3300,6 +3300,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Teleport
+    clip: {fileID: 8300000, guid: cb87608a7afbbba4a89b289713ac69dc, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &925456408
 Transform:
   m_ObjectHideFlags: 0
