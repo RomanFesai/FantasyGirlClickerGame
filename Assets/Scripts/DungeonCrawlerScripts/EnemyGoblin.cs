@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.UI;
+using System.Collections;
 using UnityEngine;
 
 namespace Assets.Scripts.DungeonCrawlerScripts
@@ -16,7 +17,7 @@ namespace Assets.Scripts.DungeonCrawlerScripts
 
         private void Attack()
         {
-            if (isBattle)
+            if (isBattle && !GameOverWindow.gameOver)
             {
                 _attackTimer += Time.deltaTime;
                 if (_attackTimer > _attackPeriodicity)

@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.75917125, g: 0.7881657, b: 0.7310332, a: 1}
+  m_IndirectSpecularColor: {r: 0.75913346, g: 0.78814113, b: 0.7310062, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2444,6 +2444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverWindow: {fileID: 153108791}
+  playerMovement: {fileID: 1611141618}
+  gameplayUI:
+  - {fileID: 1439247012}
 --- !u!1001 &397171408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11432,6 +11435,11 @@ PrefabInstance:
       propertyPath: bonusBtnTimer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4985420108571577781, guid: cf2d93832ad6bbc48b93422c394c6952,
+        type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1611141618}
     - target: {fileID: 4985420108571577781, guid: cf2d93832ad6bbc48b93422c394c6952,
         type: 3}
       propertyPath: LevelCompleteWindow

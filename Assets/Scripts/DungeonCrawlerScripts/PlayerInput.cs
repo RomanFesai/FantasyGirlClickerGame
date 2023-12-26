@@ -1,4 +1,5 @@
 using Assets.Scripts.DungeonCrawlerScripts;
+using Assets.Scripts.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMovement))]
@@ -35,7 +36,7 @@ public class PlayerInput : MonoBehaviour
         if (!PlayerStats.instance.isBattle)
             Movement();
 
-        if (PlayerStats.instance.isBattle)
+        if (PlayerStats.instance.isBattle || GameOverWindow.gameOver)
             controlButtons.SetActive(false);
         else if(DialogueManager.GetInstance() != null && !DialogueManager.GetInstance().dialogueIsPlaying && MobileInputManager.instance.IsMobileDevice())
             controlButtons.SetActive(true);

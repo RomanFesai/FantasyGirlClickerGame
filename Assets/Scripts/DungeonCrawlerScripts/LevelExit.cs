@@ -13,7 +13,7 @@ public class LevelExit : MonoBehaviour
     [SerializeField] private TextMeshProUGUI LevelCompleteWindowText;
     [SerializeField] private TextMeshProUGUI LevelCompleteWindowButtonText;
 
-    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerMovement playerMovement;
 
     [Header("UI")]
     [SerializeField] private GameObject[] gameplayUI;
@@ -54,9 +54,9 @@ public class LevelExit : MonoBehaviour
                 foreach (GameObject obj in gameplayUI)
                     obj.SetActive(false);
 
-            if (player != null)
+            if (playerMovement != null)
             {
-                player.GetComponent<PlayerMovement>().enabled = false;
+                playerMovement.enabled = false;
             }
         }
     }
