@@ -1,11 +1,13 @@
 ﻿using Cinemachine;
 using System.Collections;
 using UnityEngine;
+using YG;
 
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSONEng;
 
     private bool playerInRange;
 
@@ -18,8 +20,15 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
-           
-            DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+
+            if (YandexGame.EnvironmentData.language == "ru")
+            {
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+            }
+            else if (YandexGame.EnvironmentData.language == "en")
+            {
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSONEng);
+            }
             Destroy(gameObject);
             
         }

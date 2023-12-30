@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using YG;
 
 public class LevelExit : MonoBehaviour
 {
@@ -33,13 +34,29 @@ public class LevelExit : MonoBehaviour
     {
         if (Rewardable && LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == false)
         {
-            LevelCompleteWindowText.text = "Уровень Пройден!Кликер улучшен!";
-            LevelCompleteWindowButtonText.text = "Выход";
+            if (YandexGame.EnvironmentData.language == "ru")
+            {
+                LevelCompleteWindowText.text = "Уровень Пройден!Кликер улучшен!";
+                LevelCompleteWindowButtonText.text = "Выход";
+            }
+            else if(YandexGame.EnvironmentData.language == "en")
+            {
+                LevelCompleteWindowText.text = "Level Completed!Clicker Upgraded!";
+                LevelCompleteWindowButtonText.text = "Exit";
+            }
         }
         else if (Rewardable == false || LevelsManager.GetInstance().level[levelCompleteNumber].isRewarded == true)
         {
-            LevelCompleteWindowText.text = "Уровень Пройден!";
-            LevelCompleteWindowButtonText.text = "Выход";
+            if (YandexGame.EnvironmentData.language == "ru")
+            {
+                LevelCompleteWindowText.text = "Уровень Пройден!";
+                LevelCompleteWindowButtonText.text = "Выход";
+            }
+            else if (YandexGame.EnvironmentData.language == "en")
+            {
+                LevelCompleteWindowText.text = "Level Completed!";
+                LevelCompleteWindowButtonText.text = "Exit";
+            }
         }
     }
 

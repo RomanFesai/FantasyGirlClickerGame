@@ -1,5 +1,6 @@
 using Assets.Scripts;
 using Assets.Scripts.LevelsList;
+using Assets.Scripts.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -75,7 +76,14 @@ public class ClickerManager : MonoBehaviour
 #endif
         }
 
-        addExtra_pointsText.text = "Клик +" + addExtra_points + " на время";
+        if(YandexGame.EnvironmentData.language == "ru")
+        {
+            addExtra_pointsText.text = "Клик +" + addExtra_points + " на время";
+        }
+        else if(YandexGame.EnvironmentData.language == "en")
+        {
+            addExtra_pointsText.text = "Click +" + addExtra_points + " for a while";
+        }
     }
 
     public void ClickDown()

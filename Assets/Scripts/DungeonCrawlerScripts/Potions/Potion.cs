@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using YG;
 
 public enum PotionType
 {
@@ -27,11 +28,17 @@ public class Potion : MonoBehaviour
             {
                 case PotionType.Health:
                     PlayerStats.instance.HealthBar.value += HealthValue;
-                    ShowInfo("Здоровье восстановлено на " + HealthValue + " ед.");
+                    if(YandexGame.EnvironmentData.language == "ru")
+                        ShowInfo("Здоровье восстановлено на " + HealthValue + " ед.");
+                    else if(YandexGame.EnvironmentData.language == "en")
+                        ShowInfo("Health restored by " + HealthValue);
                     break;
                 case PotionType.Strength:
                     PlayerStats.instance.damage += damageValue;
-                    ShowInfo("Сила увеличина на " + damageValue + " ед.");
+                    if (YandexGame.EnvironmentData.language == "ru")
+                        ShowInfo("Сила увеличина на " + damageValue + " ед.");
+                    else if(YandexGame.EnvironmentData.language == "en")
+                        ShowInfo("Strenght increased by " + damageValue);
                     break;
                 default:
                     break;
