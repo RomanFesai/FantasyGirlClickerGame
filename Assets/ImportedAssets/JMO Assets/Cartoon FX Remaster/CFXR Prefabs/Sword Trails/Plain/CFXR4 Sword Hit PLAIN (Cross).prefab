@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8525990746615576125}
   - component: {fileID: 8525990746615576122}
   - component: {fileID: 8525990746615576123}
-  - component: {fileID: 6163829907784575376}
+  - component: {fileID: 6259447973092620316}
   m_Layer: 0
   m_Name: CFXR4 Sword Hit PLAIN (Cross)
   m_TagString: Untagged
@@ -4732,7 +4732,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &6163829907784575376
+--- !u!114 &6259447973092620316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4741,9 +4741,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8525990746615576120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2b165afcb14e02469a80a5ffc2bfe7b, type: 3}
+  m_Script: {fileID: 11500000, guid: aa207d437309e6b44b4353b7fc849d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeBeforePool: 0.3
 --- !u!1 &8941974229056258665
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7591592, g: 0.7881441, b: 0.7310085, a: 1}
+  m_IndirectSpecularColor: {r: 0.7592017, g: 0.7881717, b: 0.7310045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -569,9 +569,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 15
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 5
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
 --- !u!212 &237659024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -773,9 +770,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 15
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 5
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
 --- !u!212 &266005385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1904,6 +1898,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 504070431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &553853213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553853215}
+  - component: {fileID: 553853214}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &553853214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553853213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8360e3c34e2c6cc41a86bd368b89bcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &553853215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553853213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.649571, y: 1.3701429, z: 7.1868234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &659281339
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,9 +3045,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 15
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 5
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
 --- !u!1 &971750886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,9 +3605,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 15
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 5
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
 --- !u!212 &1192331727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4639,6 +4671,9 @@ MonoBehaviour:
   statusIcons:
   - {fileID: -1560125893, guid: 44aee048572bd73439ba3132cd1b17b9, type: 3}
   - {fileID: 2069504635, guid: 44aee048572bd73439ba3132cd1b17b9, type: 3}
+  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
+    type: 3}
+  _mainCamera: {fileID: 2026165284}
 --- !u!1 &1627913201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5082,9 +5117,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 15
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 5
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
 --- !u!212 &1686006186
 SpriteRenderer:
   m_ObjectHideFlags: 0

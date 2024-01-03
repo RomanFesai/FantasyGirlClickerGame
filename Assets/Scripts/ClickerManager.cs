@@ -12,7 +12,7 @@ public class ClickerManager : MonoBehaviour
 {
     [Header("Score")]
     [SerializeField] private LvLProgressBar lvlProgressBar;
-    [SerializeField] private float add_points;
+    [SerializeField] public float add_points;
     [SerializeField] private int add_Lvl;
 
     [Header("BonusButtonsSettings")]
@@ -21,9 +21,9 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI addExtra_pointsText;
 
     [Header("PointsPopUp")]
-    [SerializeField] private GameObject pointsPopUpObj;
+    [SerializeField] public GameObject pointsPopUpObj;
     [SerializeField] private TextMeshProUGUI pointsPopUp;
-    [SerializeField] private GameObject canvas;
+    [SerializeField] public GameObject canvas;
 
     [Header("Timers")]
     [SerializeField] private TextMeshProUGUI timerText1;
@@ -33,11 +33,27 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private GameObject LevelUpTextObj;
     [SerializeField] private GameObject LevelUpArrowsObj;
 
+    public Vector3 mousePos;
+    public static ClickerManager instance;
+
     // Подписываемся на событие GetDataEvent в OnEnable
     private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
 
     // Отписываемся от события GetDataEvent в OnDisable
     private void OnDisable() => YandexGame.GetDataEvent -= GetLoad;
+
+    private void Awake()
+    {
+        if (instance == null)
+        { 
+            instance = this; 
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     private void Start()
     {
@@ -99,17 +115,7 @@ public class ClickerManager : MonoBehaviour
         MySave();
         LevelsManager.GetInstance().MySave();
 #endif
-        StartCoroutine(pointsPopUpAnim());
-    }
-
-    private IEnumerator pointsPopUpAnim()
-    {
-        Vector3 mousePos = Input.mousePosition;
-        var obj = Instantiate(pointsPopUpObj, mousePos, transform.rotation);
-        obj.transform.SetParent(canvas.transform, true);
-        obj.GetComponentInChildren<TextMeshProUGUI>().text = "+" + add_points.ToString();
-        yield return new WaitForSeconds(2f);
-        Destroy(obj);
+        StartCoroutine(PointsPopUp.Create());
     }
 
     public void TempAutoClick(Button button)

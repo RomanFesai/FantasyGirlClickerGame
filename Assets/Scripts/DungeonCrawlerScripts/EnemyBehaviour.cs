@@ -16,9 +16,9 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
 
     [SerializeField] private int minusPlayerStaminaValue;
 
-    [Header("HitPopUp")]
+    /*[Header("HitPopUp")]
     [SerializeField] private GameObject hitPopUpObj;
-    [SerializeField] private GameObject _mainCamera;
+    [SerializeField] private GameObject _mainCamera;*/
 
     private Vector3 _transformY;
     protected CinemachineVirtualCamera playerCam;
@@ -107,12 +107,13 @@ public class EnemyBehaviour : MonoBehaviour, IDamagable
         transform.localScale = transform.localScale / 1.2f;
         yield return new WaitForSeconds(0.1f);
         transform.localScale = new Vector3(0.100317448f, 0.100317448f, 0.100317448f);
-        Vector3 mousePos = Input.mousePosition;
+        /*Vector3 mousePos = Input.mousePosition;
         mousePos.z = 1.5f;
         var obj = Instantiate(hitPopUpObj, mousePos, Quaternion.identity);
         obj.transform.SetParent(_mainCamera.transform, true);
         obj.transform.position = _mainCamera.GetComponent<Camera>().ScreenToWorldPoint(mousePos);
         yield return new WaitForSeconds(.3f);
-        Destroy(obj);
+        Destroy(obj);*/
+        StartCoroutine(HitPopUp.Create());
     }
 }

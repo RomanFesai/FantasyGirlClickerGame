@@ -24,6 +24,10 @@ namespace Assets.Scripts.DungeonCrawlerScripts
 
         public CanvasGroup DamageInformation;
 
+        [Header("HitPopUp")]
+        [SerializeField] public GameObject hitPopUpObj;
+        [SerializeField] public GameObject _mainCamera;
+
         [Header("StatusIcon")]
         public GameObject defaultStatusIcon;
         public Sprite[] statusIcons;

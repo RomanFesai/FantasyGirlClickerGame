@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7592261, g: 0.78817046, b: 0.73102534, a: 1}
+  m_IndirectSpecularColor: {r: 0.7591784, g: 0.7881653, b: 0.73099566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9404,9 +9404,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &305128737
@@ -15537,9 +15534,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &385782296
@@ -15892,6 +15886,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 403960963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &409133459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409133461}
+  - component: {fileID: 409133460}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &409133460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409133459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8360e3c34e2c6cc41a86bd368b89bcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &409133461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409133459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &435902935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23697,9 +23735,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!135 &942434208
@@ -25520,9 +25555,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 30
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 10
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 10
   _attackPeriodicity: 1
 --- !u!4 &1034940152
@@ -26494,9 +26526,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1083451121
@@ -28034,9 +28063,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1208728460
@@ -33600,9 +33626,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1238945572
@@ -34749,9 +34772,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1301290168
@@ -35970,9 +35990,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1356405200
@@ -50302,6 +50319,9 @@ MonoBehaviour:
   HealthBar: {fileID: 761729659}
   StaminaBar: {fileID: 1650400445}
   DamageInformation: {fileID: 2079217106}
+  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
+    type: 3}
+  _mainCamera: {fileID: 2026165284}
   defaultStatusIcon: {fileID: 1530276837}
   statusIcons:
   - {fileID: -1560125893, guid: 44aee048572bd73439ba3132cd1b17b9, type: 3}
@@ -51162,9 +51182,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 30
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 10
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 10
   _attackPeriodicity: 1
 --- !u!4 &1642478164
@@ -51994,9 +52011,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 80
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 15
   _attackPeriodicity: 2
 --- !u!212 &1668966098
@@ -85189,9 +85203,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 300
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 15
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 20
   _attackPeriodicity: 1
 --- !u!65 &2415640365777173195
@@ -85492,7 +85503,7 @@ MonoBehaviour:
   levelCompleteNumber: 2
   LevelCompleteWindowText: {fileID: 1622021996}
   LevelCompleteWindowButtonText: {fileID: 993882939}
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 1611141618}
   gameplayUI:
   - {fileID: 2079217104}
   - {fileID: 1439247012}

@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7592261, g: 0.78817046, b: 0.73102534, a: 1}
+  m_IndirectSpecularColor: {r: 0.75918865, g: 0.78815705, b: 0.7309985, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -310,9 +310,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 150
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 30
   _attackPeriodicity: 1
 --- !u!4 &58697577
@@ -522,6 +519,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79368910}
   m_CullTransparentMesh: 1
+--- !u!1 &125567502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125567504}
+  - component: {fileID: 125567503}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &125567503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125567502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8360e3c34e2c6cc41a86bd368b89bcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &125567504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125567502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 49
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &132976059
 Mesh:
   m_ObjectHideFlags: 0
@@ -1231,9 +1272,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &170139460
@@ -1987,9 +2025,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 150
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 30
   _attackPeriodicity: 1
 --- !u!4 &303937987
@@ -2320,9 +2355,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &376708984
@@ -3948,9 +3980,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 150
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 30
   _attackPeriodicity: 1
 --- !u!4 &676172518
@@ -5972,9 +6001,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 100
   <currentHealth>k__BackingField: 20
   minusPlayerStaminaValue: 0
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   animator: {fileID: 942434213}
 --- !u!95 &942434213
 Animator:
@@ -7068,9 +7094,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 250
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 45
   _attackPeriodicity: 1
 --- !u!4 &1092825231
@@ -7807,9 +7830,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &1208728460
@@ -8331,9 +8351,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &1326535554
@@ -9661,6 +9678,9 @@ MonoBehaviour:
   HealthBar: {fileID: 761729659}
   StaminaBar: {fileID: 1650400445}
   DamageInformation: {fileID: 2079217106}
+  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
+    type: 3}
+  _mainCamera: {fileID: 2026165284}
   defaultStatusIcon: {fileID: 1530276837}
   statusIcons:
   - {fileID: -1560125893, guid: 44aee048572bd73439ba3132cd1b17b9, type: 3}
@@ -10267,9 +10287,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 150
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 30
   _attackPeriodicity: 1
 --- !u!4 &1641435996
@@ -10450,9 +10467,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &1654316235
@@ -10698,9 +10712,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &1701592419
@@ -10842,9 +10853,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 250
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 45
   _attackPeriodicity: 1
 --- !u!4 &1720072714
@@ -11487,9 +11495,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 150
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 30
   _attackPeriodicity: 1
 --- !u!4 &1850563745
@@ -12876,9 +12881,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 250
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 30
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 45
   _attackPeriodicity: 1
 --- !u!4 &2026163210
@@ -13630,9 +13632,6 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 200
   <currentHealth>k__BackingField: 0
   minusPlayerStaminaValue: 20
-  hitPopUpObj: {fileID: 8525990746615576120, guid: b85d21f3b8fed714bacf0c4fd50fa512,
-    type: 3}
-  _mainCamera: {fileID: 2026165284}
   _damage: 40
   _attackPeriodicity: 1
 --- !u!212 &2144661332
