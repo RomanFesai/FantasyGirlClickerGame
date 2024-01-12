@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using YG;
+using Assets.Scripts.UI;
 
 public class DialogueOnStart : MonoBehaviour
 {
