@@ -48,10 +48,10 @@ public class PlayerInput : MonoBehaviour
     private void Movement()
     {
         int layer = 1 << LayerMask.NameToLayer("Default");
-        if (Input.GetKeyDown(forward) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveForward();
-        if (Input.GetKeyDown(back) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveBackward();
-        if (Input.GetKeyDown(left) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveLeft();
-        if (Input.GetKeyDown(right) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveRight();
+        if (Input.GetKey(forward) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveForward();
+        if (Input.GetKey(back) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveBackward();
+        if (Input.GetKey(left) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveLeft();
+        if (Input.GetKey(right) && !Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), collisionCheckRayLength, layer, QueryTriggerInteraction.Ignore)) movement.MoveRight();
         if (Input.GetKeyDown(turnLeft)) movement.RotateLeft();
         if (Input.GetKeyDown(turnRight)) movement.RotateRight();
     }
